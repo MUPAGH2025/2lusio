@@ -4,7 +4,7 @@ jobs:
   sprawozdanie:
     runs-on: ubuntu-22.04
     steps:
-      - run: sudo apt-get install texlive-xetex inkspace pandoc
+      - run: sudo apt-get install texlive-xetex inkscape pandoc
       - uses: actions/checkout@v4
       - run: pip install pint open-atmos-jupyter-utilis scipy nbconvert ipykernel
       - run: python -m nbconvert --to script --execute lab1.ipynb
