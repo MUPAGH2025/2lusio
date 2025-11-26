@@ -8,8 +8,8 @@ jobs:
       - run: sudo apt-get install texlive-xetex inkscape pandoc
       - uses: actions/checkout@v4
       - run: pip install pint open-atmos-jupyter-utils scipy nbconvert ipykernel pympdata
-      - run: python -m nbconvert --to pdf --execute sdmcwiczenia.ipynb --output lab4.pdf
+      - run: python -m nbconvert --to pdf --execute shallow_water.ipynb --output shoaling.pdf
       - uses: actions/upload-artifact@v4
         with:
-          path: lab4.pdf
+          path: shoaling.pdf
       
